@@ -47,7 +47,7 @@ class PostCTA extends StatelessWidget {
           child: Text(
             "$likes likes",
             style: const TextStyle(
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),

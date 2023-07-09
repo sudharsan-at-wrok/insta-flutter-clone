@@ -1,4 +1,4 @@
-import '../../model/post_models.dart';
+import '../../../model/post_models.dart';
 
 final List<String> userProfile = [
   'https://idsb.tmgrup.com.tr/ly/uploads/images/2022/12/19/247181.jpg',

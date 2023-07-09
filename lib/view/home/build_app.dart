@@ -2,22 +2,45 @@ import 'package:flutter/material.dart';
 
 AppBar buildAppBar(BuildContext context) {
   return AppBar(
-    
     backgroundColor: Colors.white,
     elevation: 1,
-    leading: Image.asset(
-      "assets/logo.png",
-      height: 25,
-    ),
-    leadingWidth: MediaQuery.of(context).size.width / 3,
-    actions: [
-      IconButton(
-        splashRadius: 10,
-        onPressed: () {},
-        icon: const Icon(
-          Icons.favorite_outline,
-          color: Colors.black,
+    leading: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset(
+          "assets/logo.png",
         ),
+        IconButton(
+          splashRadius: 10,
+          onPressed: () {},
+          icon: const Icon(
+            Icons.arrow_drop_down,
+            color: Colors.black,
+          ),
+        )
+      ],
+    ),
+    leadingWidth: MediaQuery.of(context).size.width / 2,
+    actions: [
+      Stack(
+        children: [
+          IconButton(
+            splashRadius: 10,
+            onPressed: () {},
+            icon: const Icon(
+              Icons.favorite_outline,
+              color: Colors.black,
+            ),
+          ),
+          const Positioned(
+            top: 12,
+            right: 10,
+            child: CircleAvatar(
+              radius: 5,
+              backgroundColor: Colors.pink,
+            ),
+          )
+        ],
       ),
       IconButton(
         splashRadius: 10,
