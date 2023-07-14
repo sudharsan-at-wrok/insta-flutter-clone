@@ -1,3 +1,4 @@
+import 'package:demo/view/notifications/notifications.dart';
 import 'package:flutter/material.dart';
 
 AppBar buildAppBar(BuildContext context) {
@@ -26,7 +27,14 @@ AppBar buildAppBar(BuildContext context) {
         children: [
           IconButton(
             splashRadius: 10,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const NotificationScreen(),
+                ),
+              );
+            },
             icon: const Icon(
               Icons.favorite_outline,
               color: Colors.black,

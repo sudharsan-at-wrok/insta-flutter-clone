@@ -37,6 +37,7 @@ class PostGridView extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => PostView(
                     postLists: postLink,
+                    offsetPost: index.toDouble(),
                   ),
                 ),
               );

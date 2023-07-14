@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "C:/flutter project/demo/linux/flutter"
+    "cmake.sourceDirectory": "C:/flutter project/demo/linux/flutter",
+    "files.associations": {
+        "*.html": "html",
+        "xiosbase": "cpp"
+    }
 }

@@ -34,6 +34,7 @@ class StoryComponent extends StatelessWidget {
             return StoryContainer(
               profileImg: storyResponse[index].storyUserProfile,
               profileName: storyResponse[index].storyUserName,
+              storyImage: storyResponse[index].storyLink,
             );
           },
         ),

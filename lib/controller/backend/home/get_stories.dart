@@ -1,11 +1,11 @@
 import 'package:demo/model/story_model.dart';
 
 final List<String> userNames = [
-  "Leo Messi",
-  "Cristanio",
-  "Neymar Jr",
-  "Sunil Chetri",
-  "Maradona",
+  "leo.messi",
+  "cristiano.ronaldo",
+  "neymar_official",
+  "sunil.india",
+  "maradona.arg",
 ];
 
 final List<String> userProfiles = [
@@ -17,18 +17,18 @@ final List<String> userProfiles = [
 ];
 
 final List<String> storyLinks = [
-  "",
-  "",
-  "",
-  "",
-  "",
+  "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/06/1280/1280/3a118568-messi1.jpg",
+  "https://imageio.forbes.com/specials-images/imageserve/649deb04a1d2385ef66aa4a7/0x0.jpg",
+  "https://imageio.forbes.com/specials-images/imageserve/64a2282f8915731ce78aa486/Brazil-v-Colombia/960x0.jpg",
+  "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt8c9cbd6622e0dc09/6397332753152407ace5a11d/Sunil_Chhetri.jpg",
+  "https://cdn.britannica.com/76/124976-050-E03E50CE/Diego-Maradona-1986.jpg",
 ];
 
 final List<bool> isSeen = [
   false,
   false,
   false,
-  false,
+  true,
   false,
 ];
 

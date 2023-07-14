@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 BottomNavigationBar buildNavBar() {
   return BottomNavigationBar(
+    elevation: 1,
+    selectedFontSize: 0,
+    unselectedFontSize: 0,
     iconSize: 30,
     currentIndex: 0,
     unselectedIconTheme: const IconThemeData(color: Colors.black),
@@ -12,6 +15,9 @@ BottomNavigationBar buildNavBar() {
       BottomNavigationBarItem(
         icon: Icon(
           Icons.home_outlined,
+        ),
+        activeIcon: Icon(
+          Icons.home,
         ),
         label: "",
       ),
@@ -29,7 +35,7 @@ BottomNavigationBar buildNavBar() {
       ),
       BottomNavigationBarItem(
         icon: Icon(
-          Icons.video_call_rounded,
+          Icons.video_call_outlined,
         ),
         label: "",
       ),

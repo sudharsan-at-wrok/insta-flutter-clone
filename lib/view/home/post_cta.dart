@@ -1,3 +1,4 @@
+import 'package:demo/view/widgets/like_button.dart';
 import 'package:flutter/material.dart';
 
 class PostCTA extends StatelessWidget {
@@ -86,41 +87,6 @@ class _SaveButtonState extends State<SaveButton> {
               Icons.bookmark,
               size: 28,
               color: Colors.black,
-            ),
-    );
-  }
-}
-
-class LikeButton extends StatefulWidget {
-  const LikeButton({
-    super.key,
-  });
-
-  @override
-  State<LikeButton> createState() => _LikeButtonState();
-}
-
-bool isLiked = false;
-
-class _LikeButtonState extends State<LikeButton> {
-  @override
-  Widget build(BuildContext context) {
-    return IconButton(
-      splashRadius: 20,
-      onPressed: () {
-        setState(() {
-          isLiked = !isLiked;
-        });
-      },
-      icon: isLiked
-          ? const Icon(
-              Icons.favorite,
-              size: 28,
-              color: Colors.red,
-            )
-          : const Icon(
-              Icons.favorite_outline,
-              size: 28,
             ),
     );
   }
